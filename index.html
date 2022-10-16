@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Formulario</title>
+</head>
+<body>
+
+  <div class="container">
+    
+
+  	<div class="border"><h2>Registro Persona</h2>
+  	<form class="formulario" method="get" id="form">
+
+  		<div class="formulario-nombre">
+  		<input type="text" class="formulario-nombre-input">
+      </div>
+  		
+  		<div class="formulario-apellido">
+  		<input type="text" class="formulario-apellido-input">
+      </div>
+
+      <div class="formulario-tipodoc">
+      <label>Tipo Documento</label>     
+      <select name="tipo_documento" class="formulario-tipodoc-option">
+          <option>Seleccione</option>
+          <option>Cedula Ciudadania</option>
+          <option>Tarjeta de Identidad</option>
+          <option>Pasaporte</option>
+          <option>Otro</option>
+        </select>
+      </div>
+  		
+  		<div class="formulario-documento">
+  		<input type="text" class="formulario-documento-input">
+      </div>
+  		
+  		<div class="formulario-telefono">
+  		<input type="text" class="formulario-telefono-input">
+      </div>
+  		
+  		<div class="formulario-correo">
+  		<input type="email" class="formulario-correo-input">
+      </div>
+
+      <div class="formulario-pass"> 
+      <input type="password" class="formulario-pass-input">
+      <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+      <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+      </svg>
+      </div>
+
+
+      <div class="formulario-pass2">
+      <input type="password" class="formulario-pass2-input">
+      <svg xmlns="http://www.w3.org/2000/svg" class="input-icon2" viewBox="0 0 20 20" fill="currentColor">
+      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+      <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+      </svg>
+      </div>
+
+
+  		<div class="formulario-sexo">
+  		<label>Genero</label>  		
+  		<select name="sexo" class="formulario-sexo-option">
+          <option>Seleccione</option>
+          <option>Femenino</option>
+          <option>Masculino</option>
+          <option>Otro</option>
+        </select>
+      </div>
+  		
+  		<div class="formulario-fechan">
+  		<label>Fecha Nacimiento</label>        
+  		<input type="date" class="formulario-fechan-input">
+      </div>
+  		
+   	</form>
+  	<button type="submit" form="form" class="boton">Registrar</button>
+  </div>
+</div>  
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+/*=====Body========*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #e3edf7;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+	height: 90vh;
+	justify-content:center;
+	align-content: center;
+}
+.border{
+	padding: 50px;
+	border-radius: 10px;
+	width: 40vh;
+	position: relative;
+	bottom: -20px;
+	background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.8);
+}
+/*=====Boton========*/
+button{
+	position: relative;
+	bottom: -1.5em;
+	left: 4.1em;
+	margin: 10px;
+	font-weight: 600;
+	top: 10px;
+	margin-bottom: -10px;
+	font-size: 20px;
+	border-radius: 7px;
+	padding: 10px;	
+	border: 2px solid transparent;
+	color: #00172d;
+	background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+button:hover{
+	cursor: pointer;
+	box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+/*=====Inputs======*/
+
+select,input{
+	border: 0;
+	height: 22px;
+	font-size: 19px;
+	margin: 5px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 2px;
+	width: 39vh;
+	border-radius: 5px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+	
+}
+select:focus,input:focus{
+	outline: none;
+	border: 0;
+	font-size: 19px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 2px;
+	color:#00172d;
+	background: #e3edf7;    
+    box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+/*========DIVS========*/
+
+.formulario-nombre,.formulario-apellido,.formulario-documento,
+.formulario-telefono,.formulario-correo,.formulario-sexo,
+.formulario-fechan,.formulario-pass,.formulario-pass2,.formulario-tipodoc{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	position: relative;		
+	left: -0.3em;
+}
+
+.formulario-sexo-option,.formulario-tipodoc-option{
+ font-size: 18px;
+ margin: 2px;
+ position: relative;
+ width: 39.5vh;
+ left: 2px;
+}
+
+
+/*====Titulo Registo Persona====*/
+
+h2{
+	text-align: center;
+	margin-top: -30px;
+}
+
+div > h2{
+	font-size: 30px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 2px;
+	color:#00172d;
+}
+
+/*====Titulo Campos y Listas Desplegables=======*/
+label{
+	position: relative;
+	left: 8px;
+	font-size: 17px;
+	font-weight: 600;
+	border-radius: 7px;
+	color:#00172d;
+}
+option{
+	left: 8px;
+	font-size: 17px;
+	font-weight: 400;
+	border-radius: 7px;
+	color:#00172d;
+}
+
+/*======Iconos======*/
+
+.input-icon,.input-icon2 {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-icon,.input-icon2{
+  left: unset;
+  right: 12px;
+}
+
+/*=================Responsive=================*/
+@media only screen and (max-width: 430px){
+
+/*====Titulo Registo Persona====*/
+
+h2{
+	text-align: center;
+	margin-top: -30px;
+}
+
+div > h2{
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 2px;
+	color:#00172d;
+}
+
+/*========DIVS========*/
+
+
+.formulario-nombre,.formulario-apellido,.formulario-documento,
+.formulario-telefono,.formulario-correo,.formulario-sexo,
+.formulario-fechan,.formulario-pass,.formulario-pass2,.formulario-tipodoc{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	position: relative;		
+	left: -0.3em;
+	margin-left: -20px;
+}
+
+.formulario-sexo-option{
+    font-size: 15px;
+    margin: 2px;
+    margin-left: 2px;
+    letter-spacing: 1px;
+    position: relative;
+    width: 23vh;
+    margin-bottom: -50px;
+    left: 2px;
+}
+.formulario-tipodoc-option{
+	font-size: 15px;
+    margin: 2px;
+    letter-spacing: 1px;
+    position: relative;
+    width: 23vh;
+    left: 2px;
+}
+/*=====Inputs======*/
+
+select,input{	
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin: 5px;	
+	width: 23vh;
+}
+select:focus,input:focus{
+	border: 0;
+	letter-spacing: 1px;
+	font-size: 15px;	
+}
+/*====Titulo Campos y Listas Desplegables=======*/
+label{
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-right: 15px;	
+}
+option{
+	letter-spacing: 1px;
+	font-size: 12px;
+	font-weight: 400;	
+}
+/*======Iconos======*/
+.input-icon,.input-icon2 {
+  position: relative;
+  left: -60%;
+  top: -80%;  
+  transform: translate(30px,-46px);
+  margin: -50px;
+}
+
+.input-icon,.input-icon2{
+  left: unset;
+  right: 12px;
+}
+
+/*=====Boton========*/
+button{
+	position: relative;
+	bottom: 0;
+	left: 2.5em;
+	margin: 0;
+	margin-bottom: -10px;
+	font-size: 15px;
+	border-radius: 8px;
+	padding: 8px;	
+}
+/*=====Container=========*/
+.container{
+	margin: 2px;	
+	height: 80vh;	
+}
+.border{
+	padding: 50px;
+	border-radius: 10px;
+	width: 20vh;
+	margin-top: 60px;
+	margin-left: -10px;
+	
+}
+
+
+}
